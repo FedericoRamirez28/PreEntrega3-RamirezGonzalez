@@ -1,0 +1,21 @@
+//NAVBAR
+
+.nav-colorback{
+    background-color:rgb(167, 111, 216);
+   }
+   .navbar-expand-lg{
+    display: flex;
+    position: sticky;
+   }
+
+   .nav-align{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+   
+   }
+   
+   .navbar-nav{
+       display: flex;
+       gap: 10vh;
+   }

@@ -1,0 +1,31 @@
+#bodycontac{
+    background-image: url(../multimedia/img-contacto/fondocontac.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+//MAIN
+
+.titulo__contacto{
+    @include flex(inline-flex,center,center);
+    color: $color-titulos;
+    font-family: $font-titulos;
+    font-size: 500% ;
+    margin-left: 10vw;
+}
+
+//NAVBARS LINKS
+
+.nav__links--contacto{
+    @include flex(flex,center,center);
+    padding-top: 5%;
+
+    .links__nav{
+        @include ancho-alto(250%,300%);
+        padding: 70%;
+        &:hover{
+            scale: 1.5;
+        }
+    }
+}

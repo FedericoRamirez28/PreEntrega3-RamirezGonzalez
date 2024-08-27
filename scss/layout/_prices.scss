@@ -1,0 +1,128 @@
+#bodyprices{
+    background-image: url(../multimedia/img-prices/fondoprice.jpeg);
+}
+/* HEADER */
+#titulo__precios{
+    @include ancho-alto(5%, 20%);
+    font-family: $font-titulos;
+    color: $color-titulos;
+    display: block;
+    margin-left: 10%;   
+    background-color: rgb(148, 104, 159);
+    font-size: 3cm;
+    transform: translateY(50%);
+}
+
+/* MAIN SECCION  */
+.container__prices--contenido-principal{
+    padding-top: 10%;
+ 
+    .sub__container--prices{
+        @include flex(flex, center, center);
+        background-color: rgb(148, 104, 159);
+        color: $color-titulos;
+        width: 100%;
+        font-size: 2cm;
+        gap: 20vw;
+       
+    }
+     .sub__container--fotos{
+        @include flex(flex, space-evenly, center);
+        padding-top: 5%;
+        gap: 10vw;
+       
+        .muestra__de--fotos{
+            @include ancho-alto(20%, 20%);
+            border: solid;
+            border-color: black;
+
+            &:hover{
+                scale: 1.5;
+            }
+        }
+    }
+
+}
+
+/* PRECIOS DE BODY SECCION 1 */
+
+.container__prices--secundario{
+    @include flex(flex,space-between,center);
+    padding: 5%;    
+}
+
+#seccion__precios--head{
+    background-color: rgb(148, 104, 159);
+    border-left: 5px solid violet; 
+  
+    .subtitulo__head{
+        @include flex (flex,center,center);
+        font-family: $font-titulos;
+        color: rgb(44, 0, 92);
+        font-size: 2cm ;
+    }
+    
+    .subseccion__precios--head{
+        @include ancho-alto(100%,100%);
+        padding-top: 40%;
+        color: black;
+        font-family: $font-parrafos;
+        font-size: 1cm;
+    }
+    
+}
+
+/* PRECIOS DE HALF BODY SECCION 2 */
+
+#seccion__precios--halfbody{
+    background-color: rgb(148, 104, 159);
+    border-left: 5px solid violet; 
+    
+    .subtitulo__halfbody{
+        @include flex (flex,center,center);
+        font-family: $font-titulos;
+        color: rgb(44, 0, 92);
+        font-size: 2cm ;
+    }
+
+    .subseccion__precios--halfbody{
+        @include ancho-alto(100%,100%);
+        padding-top: 40%;
+        color: black;
+        font-family: $font-parrafos;
+        font-size: 1cm;
+    }
+
+}
+
+
+/* PRECIOS DE FULL BODY SECCION 3 */
+#seccion__precios--fullbody{
+    background-color: rgb(148, 104, 159);
+    border-left: 5px solid violet; 
+
+    .subtitulo__fullbody{
+        @include flex (flex,center,center);
+        font-family: $font-titulos;
+        color: rgb(44, 0, 92);
+        font-size: 2cm ;
+    }
+    
+    .subseccion__precios--fullbody{
+        @include ancho-alto(100%,100%);
+        padding-top: 40%;
+        color: black;
+        font-family: $font-parrafos;
+        font-size: 1cm;
+    }
+}
+
+
+.backtohome{
+    @include flex (flex,center,center);
+    font-family: $font-parrafos;
+    color:rgb(44, 0, 92);
+    padding-top: 5%;
+    margin-right: 5%;
+    font-size: 1cm;
+    }

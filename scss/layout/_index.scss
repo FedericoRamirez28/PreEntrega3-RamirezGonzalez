@@ -1,0 +1,44 @@
+body{
+    background-image:url(../multimedia/img-home/fondohome.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+//Main
+.header2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+    width: 100%;
+    height: 100%;
+
+    .titulo{
+        color: $color-titulos;
+        font-style: italic;
+        font-size: 400%;
+        margin-left: 1%;
+
+    }
+
+    .nombre{
+        color: $color-subtitulos;
+        margin-right: 3vh;
+        padding-top: 1.2%;
+        font-size: 200%;
+    
+        
+    }
+}
+/* SECTION */
+
+.header-h3{
+    color:$color-subtitulos;
+    margin-left: 1%;
+    padding-bottom: 10%;
+}
+
+.hr-color1{
+    color: rgb(238, 48, 238);
+    height: 10px;
+}

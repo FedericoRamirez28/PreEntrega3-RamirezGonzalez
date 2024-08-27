@@ -1,0 +1,83 @@
+.bodyabout{
+    background-image: url(../multimedia/img-aboutme/fondoabout.jpeg);
+}
+//TITULO Y SUBTITULO
+
+.aboutme__section1{
+    @include flex (flex, space-between, auto);
+    background-color:rgb(55, 31, 120);  
+
+    .titulo__subtitulo--about{
+    color: $color-titulos;
+    font-family: $font-titulos;
+    margin: 1%;
+    font-size: 2.5rem;
+    }
+
+}
+
+//ARTICULO 1 E IMAGEN 1
+
+.articulo__1{
+    @include flex (flex, left, start);
+
+    .articulo__parrafo1{
+        color: $color-parrafos;
+        font-family: $font-parrafos;
+        margin-top: 3%;
+        margin-left: 1%;
+        font-size: 0.8cm;
+        line-height: 1.5;
+
+        &::first-letter{
+            font-size: 200%;
+      }
+    }
+    
+
+    .foto__articulo1{
+        @include ancho-alto (100%, 50vh);
+        z-index: 1;
+        margin-right: 2%;
+        padding-top: 2%;    
+        background: fixed;
+        object-fit: cover;
+        object-position: right;
+        
+    
+        
+    }
+} 
+
+//ARTICULO 2 E IMAGEN 2
+
+.articulo__2{
+    @include flex (inline-block, none, center);
+
+    .articulo__parrafo2{
+        @include ancho-alto (80%, auto);
+        color: $color-parrafos;
+        font-family: $font-parrafos;
+        display: inline-block ;
+        margin-left: 2%;
+        font-size: 0.8cm;
+        line-height: 1.5;
+
+        &::first-letter{
+            font-size: 200%;
+      }
+        
+    }
+
+    .foto__articulo2{
+        @include ancho-alto (10%, 50vh);
+        z-index: 1;
+        margin-left: 1%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        background: fixed;
+        object-fit: cover;
+    
+    }
+    
+}

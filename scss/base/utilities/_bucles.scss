@@ -1,0 +1,11 @@
+// BUCLE PARA PADDING Y MARGIN
+
+@for $margin-padding from 1 to 10{
+    .ma-#{$margin-padding}{
+        margin: $margin-padding * 1%;
+    }
+
+    .padding-for-#{$margin-padding}{
+        padding: $margin-padding * 1%;
+    }
+}

@@ -1,0 +1,14 @@
+//MIXIN PARA FLEX
+
+@mixin flex($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//MIXIN PARA WIDTH Y HEIGHT
+
+@mixin ancho-alto($width, $height){
+    width: $width;
+    height: $height;
+}
