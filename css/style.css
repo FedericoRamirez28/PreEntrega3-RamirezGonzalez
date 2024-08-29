@@ -82,7 +82,7 @@ a {
 
 .container__cards--titulo {
   width: 100%;
-  height: 100px;
+  height: 100%;
   background-color: #c783c3;
   display: flex;
   opacity: 80%;
@@ -302,6 +302,34 @@ body {
   border-radius: 2%;
 }
 
+.transicion_contact {
+  animation-name: transicion-title;
+  animation-duration: 3s;
+  transition: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transicion-title {
+  0% {
+    color: #70286f;
+  }
+  20% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #462645, 0 0 30px #462645, 0 0 40px #462645, 0 0 50px #462645, 0 0 60px #462645;
+  }
+  40% {
+    color: #70286f;
+  }
+  60% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #462645, 0 0 30px #462645, 0 0 40px #462645, 0 0 50px #462645, 0 0 60px #462645;
+  }
+  80% {
+    color: #70286f;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #462645, 0 0 30px #462645, 0 0 40px #462645, 0 0 50px #462645, 0 0 60px #462645;
+  }
+}
 #bodycontac {
   background-image: url(../multimedia/img-contacto/fondocontac.jpeg);
   background-position: center;
@@ -342,6 +370,7 @@ body {
 }
 .nav__links--box .links__nav:hover {
   scale: 1.5;
+  transition: 1s;
 }
 
 #bodytos {
@@ -437,6 +466,7 @@ body {
 }
 .container__prices--contenido-principal .div__container--fotos .muestra__de--fotos:hover {
   scale: 1.5;
+  transition: 1s;
 }
 
 /* PRECIOS DE BODY SECCION 1 */
@@ -637,7 +667,7 @@ body {
 @media only screen and (max-width: 600px) {
   .container__cards--titulo {
     width: 100%;
-    height: 100px;
+    height: 100%;
     background-color: #c783c3;
     display: flex;
     opacity: 80%;

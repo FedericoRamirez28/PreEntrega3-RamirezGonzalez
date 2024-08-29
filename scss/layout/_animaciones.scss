@@ -1,0 +1,58 @@
+// ANIMACION PARA TITULO DE CONTACT
+
+.transicion_contact{
+    animation-name: transicion-title;
+    animation-duration: 3s;
+    transition: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes transicion-title{
+    0%{
+        color: $violeta-oscuro;
+    }
+
+    20%{
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px $violeta-muyoscuro,
+        0 0 30px $violeta-muyoscuro,
+        0 0 40px $violeta-muyoscuro,
+        0 0 50px $violeta-muyoscuro,
+        0 0 60px $violeta-muyoscuro,
+    }
+
+    40%{
+        color: $violeta-oscuro;
+    }
+
+    60%{
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px $violeta-muyoscuro,
+        0 0 30px $violeta-muyoscuro,
+        0 0 40px $violeta-muyoscuro,
+        0 0 50px $violeta-muyoscuro,
+        0 0 60px $violeta-muyoscuro,
+    }
+
+    80%{
+        color: $violeta-oscuro;
+    }
+
+    100%{
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px $violeta-muyoscuro,
+        0 0 30px $violeta-muyoscuro,
+        0 0 40px $violeta-muyoscuro,
+        0 0 50px $violeta-muyoscuro,
+        0 0 60px $violeta-muyoscuro,
+    }
+
+}

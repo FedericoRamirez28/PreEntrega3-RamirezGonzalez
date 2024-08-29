@@ -16,7 +16,7 @@
 // MIXI PARA LOS TITULOS/SEPARACIONES DE SECCIONES EN EL INDEX
 
 @mixin index__container-titulos{
-    @include ancho-alto(100%, 100px);
+    @include ancho-alto(100%, 100%);
     background-color: $violeta-intermedio;
     display: flex;
     opacity: 80%;
