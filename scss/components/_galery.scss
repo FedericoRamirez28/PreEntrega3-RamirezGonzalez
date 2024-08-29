@@ -1,17 +1,13 @@
-//Galeria Main
+//GALERIA DE INDEX
 .gallery-home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,center,center);
     color: $color-titulos;
-    font-size: 1.5cm;
     border: solid;
-    margin-left: 30%;
-    margin-right: 30%;
-
+    margin: 10%;
+    font-size: 1.5cm;
 }
 
-/* GRID HOME */
+// EL DISPLAY GRID
 
 .grid_container{
     max-width: 1500px;
@@ -27,14 +23,20 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
+        object-fit: cover;
+        border-radius: 2%;
     }
 
     .dibujo{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        border-radius: 2%;
     
         &:hover{
             scale: 1.3;
         }
     }
 }
+
+

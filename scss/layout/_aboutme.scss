@@ -5,25 +5,34 @@
 
 .aboutme__section1{
     @include flex (flex, space-between, auto);
-    background-color:rgb(55, 31, 120);  
+    background-color:$violeta-intermedio;  
+    opacity: 70%;
 
     .titulo__subtitulo--about{
-    color: $color-titulos;
+    color: $violeta-oscuro;
     font-family: $font-titulos;
     margin: 1%;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     }
 
+    .titulo__subtitulo--about-{
+        color: $violeta-oscuro;
+        font-family: $font-titulos;
+        margin: 2%;
+        font-size: 2rem;
+        }
 }
 
 //ARTICULO 1 E IMAGEN 1
 
 .articulo__1{
     @include flex (flex, left, start);
-
     .articulo__parrafo1{
-        color: $color-parrafos;
+        background-color: $violeta-intermedio;
+        color: $violeta-oscuro;
         font-family: $font-parrafos;
+        border-radius: 1%;
+        opacity: 80%;
         margin-top: 3%;
         margin-left: 1%;
         font-size: 0.8cm;
@@ -34,50 +43,49 @@
       }
     }
     
-
     .foto__articulo1{
-        @include ancho-alto (100%, 50vh);
-        z-index: 1;
-        margin-right: 2%;
-        padding-top: 2%;    
+        @include ancho-alto (100%, 60vh);
         background: fixed;
         object-fit: cover;
         object-position: right;
-        
-    
-        
+        z-index: 1;
+        margin: 2%;
+        padding-top: 1%;
+        border-radius: 2%;    
     }
 } 
 
 //ARTICULO 2 E IMAGEN 2
 
 .articulo__2{
-    @include flex (inline-block, none, center);
+    @include flex (flex, left, start);
 
-    .articulo__parrafo2{
+        .articulo__parrafo2{
         @include ancho-alto (80%, auto);
-        color: $color-parrafos;
-        font-family: $font-parrafos;
+        background-color: $violeta-intermedio;
+        color: $violeta-oscuro;
         display: inline-block ;
-        margin-left: 2%;
+        border-radius: 1%;
+        font-family: $font-parrafos;
         font-size: 0.8cm;
         line-height: 1.5;
-
+        margin: 1%;
+        transform: translateY(20%);
+        opacity: 80%;
         &::first-letter{
             font-size: 200%;
       }
-        
     }
 
     .foto__articulo2{
-        @include ancho-alto (10%, 50vh);
+        @include ancho-alto (10%, 60vh);
         z-index: 1;
-        margin-left: 1%;
-        padding-top: 2%;
-        padding-bottom: 1%;
+        margin: 1%;
+        padding-top: 1%;
+        border-radius: 3%;    
         background: fixed;
         object-fit: cover;
-    
+        object-position: right;
+     }
     }
     
-}

@@ -2,7 +2,8 @@
 
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    opacity: 70%;
+    background-color: rgb(167, 111, 216);
 
     .grupo-1{
         width: 100%;
@@ -13,16 +14,18 @@
         grid-gap:50px;
         padding: 45px 0px;
         .box h2{
-            color: #ffffff;
+            color: $violeta-oscuro;
+            font-family: $font-subtitulos;
             margin-bottom: 25px;
-            font-size: 20px;
+            font-size: 30px;
         }
         .box p{
-            color: #efefef;
+            color: $violeta-oscuro;
+            font-family: $font-parrafos;
             margin-bottom: 10px;
         }
         .rgbindex{
-            color: rgb(167, 111, 216);
+            color: rgb(58, 6, 58);
         }
         .figure{
             width: 100%;
@@ -59,10 +62,11 @@
       }
     }
 .grupo-2{
-    background-color: #0a1a2a;
+    background-color: $violeta-intermedio;
     padding: 15px 10px;
+    font-family: $font-titulos;
     text-align: center;
-    color: #fff;
+    color: $violeta-oscuro;
 
     small{
         font-size: 15px;

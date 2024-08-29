@@ -1,14 +1,16 @@
 //MEDIAQUERIES INDEX
 
 @media only screen and (max-width: 600px) {
-    .header2{
+    .section__main-header{
         display: flex;
         flex-direction: column;
+        margin: 2%;
+        font-size: 70%;
     }
 }
 @media only screen and (max-width: 600px) {
     .titulo{
-        font-size: 200%;
+        font-size: 50%;
     }
 }
 
@@ -17,6 +19,39 @@
         font-size: 100%;
     }
 }
+
+// TITULOS
+@media only screen and (max-width: 600px){
+    .container__cards--titulo{
+        @include index__container-titulos;
+        font-size: 70%;
+        }
+    }
+
+// MEDIAQUERIES CARDS   
+@media only screen and (max-width: 600px) {
+    .box_card{
+        @include ancho-alto(100%, 100%);
+        flex-direction: column;
+
+    .containers_cards{
+        @include flex(flex, center, center);
+        @include ancho-alto(80%,200%);
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .parrafos__card{
+        margin:5%;
+        font-size: 150%;
+   }
+     .imagen_card{ 
+        @include ancho-alto(70%, 70%);
+     }
+ }
+}
+// MEDIAQUERIES GALLERY
+
 @media only screen and (max-width: 600px) {
     .grid_container{
         max-width: 400px;
@@ -31,98 +66,92 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1136px) {
     .dibujo:hover{
         scale: 1.4;
 
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1136px) {
     .gallery-home{
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1cm;
-
     }
+
 }
 
 //MEDIAQUERIES ABOUTME
 
 @media only screen and (max-width: 1136px){
-    .colorarti{
+    .aboutme__section1{
         font-size: 10px;
         line-height: 1;
         display: flex;
         flex-direction: column;
     }
 }
+//ARTICULO 1
 
 @media only screen and (max-width: 1136px){
-    .colorarti-parrafo-about{
-        font-size: 20px;
-        line-height: 1;
-        display: flex;
+    .articulo__1{
         flex-direction: column;
+        display: flex;
+        .articulo__parrafo1{
+            font-size: 20px;
+            line-height: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    
+
+    .foto__articulo1{
+        @include ancho-alto (95%, 90%);
+         margin: 3%;
+        }
     }
 }
 
+// ARTIULO 2
 @media only screen and (max-width: 1136px){
-    .fotoarti{
-      width: 30vh;
-      height: 30vh;
-      border-radius: 10%;
-      display: flex;
-      flex-direction: column;
-      border-radius: 5%;
-      margin-left: 10%;
+    .articulo__2{
+        flex-direction: column-reverse;
+        display: flex;
+        margin: 1%;
+    
+            .articulo__parrafo2{
+                width: 100%;
+                font-size: 20px;
+                line-height: 1;
+                display: flex;
+                flex-direction: column;
+                transform: translateY(-3%);
+                margin: 1%;
+          }
+        .foto__articulo2{
+            @include ancho-alto (90%, 90%);
+            margin: 3%;
+         }
+       }
     }
-}
-
-@media only screen and (max-width: 1136px){
-    .fotoarti2{
-      width: 30vh;
-      height: 30vh;
-      border-radius: 5%;
-      margin-left: 15%;
-    }
-}
-
-@media only screen and (max-width: 1136px){
-    .media-section-about{
-        padding-top: 10%;
-        display: inline-block;
-    }
-}
-
-@media only screen and (max-width: 1136px){
-    .parrafoabout{
-        font-size: 20px;
-        line-height: 1;
-        transform: translateY(30%);
-        margin-left: 1%;
-    }
-}
 
 //MEDIQUERIES TERMINOS Y CONDICIONES
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1136px){
     .colortitle{
-        font-size: 250%;
+        font-size: 200%;
     }
 }
 
 @media only screen and (max-width: 1136px){
-    #parrafotos{
-        font-size: 100%;
-        transform: translateY(-35px);
+    .parrafos__tos{
+        font-size: 120%;
     }
 }
 
 @media only screen and (max-width: 1136px){
-    #parrafotoscala{
-        font-size: 100%;
-        transform: translateY(-35px);
-        margin-left: 10%;
+    #parrafo__calavera{
+        font-size: 120%;
     }
 }
 
@@ -147,28 +176,35 @@
 
 //PRECIOS
 
+
 @media only screen and (max-width:1136px) {
-    .subsection1{
-        color: rgb(148, 104, 159);
+    .container__prices--contenido-principal{
         display: flex;
-        font-size: 1cm;
-        margin-right: 10%;
-        padding-top: 5%;
-        height: 50%;
-        width: 50%;
-        transform: translateY(150%);
-        
+        flex-direction: column;
+        width: 100%;
+
+        .div__container--prices{
+            background-color: $violeta-intermedio;
+            color: $violeta-oscuro;
+            width: 100%;
+            font-size: 2em;
+           
+        }
+
+        .div__container--fotos{
+            gap: none;
      }
+}
 }
 
 @media only screen and (max-width:1136px) {
-    .subfotos{
-        display: flex;
-        width: 30%;
-        height: 20%;
-        margin-left: 60%;
-     }
+    .container__prices--secundario{
+        margin-left: 20%;
+       flex-direction: column;
+       width: 60vw;
+    }
 }
+
 
 @media only screen and (max-width:1136px) {
     .homeprecios{
@@ -183,96 +219,7 @@
      }
 }
 
-//MEDIAQUERIES PRECIO BODY SECTION 
 
-@media only screen and (max-width:1136px) {
-    #secp1{
-        background-color: rgb(148, 104, 159);
-        max-width: 60%;
-        max-height: 20%;
-        margin-left: 22%;
-     }
-}
-
-@media only screen and (max-width:1136px) {
-    .subsection2{
-        width: 50%;
-        height: 50%;
-        padding-top: 20%;
-        margin-left: 20%;
-        color: black;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.8cm;
- }
-}
-
-
-@media only screen and (max-width:1136px) {
-    .backtohome1{
-        padding-top: 7%;
-        font-size: 0.8cm;
- }
-}
-
-//MEDIAQUERIES PRECIOS DE HALF BODY
-
-@media only screen and (max-width:1136px) {
-    #secp2{
-        background-color: rgb(148, 104, 159);
-        max-width: 60%;
-        max-height: 20%;
-        margin-left: 22%;
-     }
-}
-
-@media only screen and (max-width:1136px) {
-    .subsection3{
-        width: 50%;
-        height: 50%;
-        padding-top: 20%;
-        margin-left: 20%;
-        color: black;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.8cm;
- }
-}
-
-@media only screen and (max-width:1136px) {
-    .backtohome2{
-        padding-top: 7%;
-        font-size: 0.8cm;
- }
-}
-
-//MEDIAQUERIES PRECIOS DE FULLBODY
-
-@media only screen and (max-width:1136px) {
-    #secp3{
-        background-color: rgb(148, 104, 159);
-        max-width: 60%;
-        max-height: 20%;
-        margin-left: 22%;
-     }
-}
-
-@media only screen and (max-width:1136px) {
-    .subsection4{
-        width: 50%;
-        height: 50%;
-        padding-top: 20%;
-        margin-left: 20%;
-        color: black;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.8cm;
- }
-}
-
-@media only screen and (max-width:1136px) {
-    .backtohome3{
-        padding-top: 7%;
-        font-size: 0.8cm;
- }
-}
 
 //MEDIAQUERIES DEL FOOTER
 

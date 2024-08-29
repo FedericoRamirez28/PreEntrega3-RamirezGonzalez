@@ -5,40 +5,52 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-//Main
-.header2{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3vw;
-    width: 100%;
-    height: 100%;
+//MAIN/ TITULO / SUBTITULO / NOMBRE
+.section__main-header{
+    @include flex (flex,space-between,none);
+    @include ancho-alto(100%, 100%);
+    padding-top: 1%;
 
     .titulo{
         color: $color-titulos;
         font-style: italic;
         font-size: 400%;
         margin-left: 1%;
-
     }
 
     .nombre{
-        color: $color-subtitulos;
+        color: $violeta-intermedio;
         margin-right: 3vh;
         padding-top: 1.2%;
         font-size: 200%;
     
-        
     }
 }
-/* SECTION */
 
-.header-h3{
-    color:$color-subtitulos;
+.nombre__aj{
+    color:$violeta-intermedio;
     margin-left: 1%;
-    padding-bottom: 10%;
+    padding-bottom: 1%;
 }
 
-.hr-color1{
-    color: rgb(238, 48, 238);
-    height: 10px;
+//VIDEO DE YOUTUBE IFRAME ESTILO BOX NEON
+.video__container{
+    padding: 1%;
+    
+    .video_youtube{
+        @include ancho-alto(80%, 70vh);
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px $violeta-intermedio,
+        0 0 30px $violeta-intermedio,
+        0 0 40px $violeta-intermedio,
+        0 0 50px $violeta-intermedio,
+        0 0 60px $violeta-intermedio;
+        margin: 4% 10% 5% 10%;
+        background-color: black;
+        object-fit: cover;
+        object-fit: contain;    
+        border-radius: 2%; 
+    }
 }

@@ -7,34 +7,32 @@
     font-family: $font-titulos;
     color: $color-titulos;
     display: block;
-    margin-left: 10%;   
-    background-color: rgb(148, 104, 159);
+    margin-left: 6%;   
+    background-color: $violeta-oscuro;
     font-size: 3cm;
-    transform: translateY(50%);
+    transform: translateY(30%);
 }
 
 /* MAIN SECCION  */
 .container__prices--contenido-principal{
-    padding-top: 10%;
- 
-    .sub__container--prices{
+    padding-top: 5%;
+    .div__container--prices{
         @include flex(flex, center, center);
-        background-color: rgb(148, 104, 159);
-        color: $color-titulos;
+        background-color: $violeta-intermedio;
+        color: $violeta-oscuro;
         width: 100%;
-        font-size: 2cm;
+        font-size: 1.3cm;
         gap: 20vw;
        
     }
-     .sub__container--fotos{
+     .div__container--fotos{
         @include flex(flex, space-evenly, center);
         padding-top: 5%;
         gap: 10vw;
        
         .muestra__de--fotos{
             @include ancho-alto(20%, 20%);
-            border: solid;
-            border-color: black;
+            border-radius: 1%;
 
             &:hover{
                 scale: 1.5;
@@ -49,25 +47,27 @@
 .container__prices--secundario{
     @include flex(flex,space-between,center);
     padding: 5%;    
+    border-radius: 2%;
 }
 
 #seccion__precios--head{
-    background-color: rgb(148, 104, 159);
-    border-left: 5px solid violet; 
+    background-color: $violeta-intermedio;
+    border-left: 5px solid $color-titulos; 
+    border-radius: 2%;
   
     .subtitulo__head{
         @include flex (flex,center,center);
         font-family: $font-titulos;
-        color: rgb(44, 0, 92);
-        font-size: 2cm ;
+        color: $violeta-oscuro;
+        font-size: 300%;
     }
     
     .subseccion__precios--head{
         @include ancho-alto(100%,100%);
-        padding-top: 40%;
-        color: black;
+        color: $violeta-oscuro;
         font-family: $font-parrafos;
-        font-size: 1cm;
+        padding-top: 40%;
+        font-size: 200%;
     }
     
 }
@@ -75,22 +75,23 @@
 /* PRECIOS DE HALF BODY SECCION 2 */
 
 #seccion__precios--halfbody{
-    background-color: rgb(148, 104, 159);
-    border-left: 5px solid violet; 
+    background-color:$violeta-intermedio;
+    border-left: 5px solid $color-titulos; 
+    border-radius: 2%;
     
     .subtitulo__halfbody{
         @include flex (flex,center,center);
         font-family: $font-titulos;
-        color: rgb(44, 0, 92);
-        font-size: 2cm ;
+        color: $violeta-oscuro;
+        font-size: 300%;
     }
 
     .subseccion__precios--halfbody{
         @include ancho-alto(100%,100%);
         padding-top: 40%;
-        color: black;
+        color:  $violeta-oscuro;
         font-family: $font-parrafos;
-        font-size: 1cm;
+        font-size: 200%;
     }
 
 }
@@ -98,31 +99,32 @@
 
 /* PRECIOS DE FULL BODY SECCION 3 */
 #seccion__precios--fullbody{
-    background-color: rgb(148, 104, 159);
-    border-left: 5px solid violet; 
+    background-color: $violeta-intermedio;
+    border-left: 5px solid $color-titulos; 
+    border-radius: 2%;
 
     .subtitulo__fullbody{
         @include flex (flex,center,center);
         font-family: $font-titulos;
-        color: rgb(44, 0, 92);
-        font-size: 2cm ;
+        color: $violeta-oscuro;
+        font-size: 300%;
     }
     
     .subseccion__precios--fullbody{
         @include ancho-alto(100%,100%);
-        padding-top: 40%;
-        color: black;
+        color: $violeta-oscuro;
         font-family: $font-parrafos;
-        font-size: 1cm;
+        padding-top: 40%;
+        font-size: 200%;
     }
 }
 
-
+// BOTON DE SCROLL HACIA EL TITULO
 .backtohome{
     @include flex (flex,center,center);
     font-family: $font-parrafos;
     color:rgb(44, 0, 92);
     padding-top: 5%;
     margin-right: 5%;
-    font-size: 1cm;
+    font-size: 200%;
     }

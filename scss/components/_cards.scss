@@ -1,0 +1,41 @@
+
+
+
+.container__cards--titulo{
+    @include index__container-titulos;
+
+    .titulo_de--cards{
+        @include index__titulos;
+    }
+}
+ 
+.box_card{
+    @include ancho-alto(100%, 100%);
+    display: flex;
+    flex-direction: column;
+
+        .containers_cards{
+            @include flex(inline-flex, space-evenly, center);
+            @include ancho-alto(20%,70%);
+            background-color: $violeta-intermedio;
+            flex-direction: column;
+            margin: 2%;
+            border-radius: 2%;
+
+            &:hover{
+                scale: 1.2;
+            }
+        }
+
+        .parrafos__card{
+            color: $violeta-oscuro;
+            margin:5%;
+            font-size: 200%;
+            font-family: $font-subtitulos;
+       }
+         .imagen_card{ 
+            @include ancho-alto(100%, 70%);
+            border-radius: 180px;
+            padding: 10%;
+         }
+        }

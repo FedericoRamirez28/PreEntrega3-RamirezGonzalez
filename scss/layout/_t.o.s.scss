@@ -1,66 +1,42 @@
 #bodytos{
-    background-image: url(../multimedia/T.O.S/fondotos.jpeg);
+    background-image: url(../multimedia/img-t.o.s/fondotos.jpeg);
 }
+//TITULO
 
-.titulo__tos{
-    display: flex;
-    background-color: transparent darkgray;
-    color: white;
-    color: black;
-    transform: translateY(90%);
-    margin-left: 2%;
-    margin-bottom: 3%;
-    line-height: 100%;
-    font-size: 600%;
-    font-weight: bold;
-    text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;}
+.section__titulo--tos{
+    @include contacytops__container-titulos;
+    .titulo__tos{
+        @include titulos__contactytos;
+    }
 
-
-.tos1{
-    border: solid 100px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;
-    color: white;
-    color: black;
-    background-color: transparent darkgray;
+}   
     
-}
-/* INICIO DE MAIN */
-.img__tos{
-    transform: translateY(10px);
-    margin-left: 3%;
-    padding-top: 7%;
-    width: 5%;
-    height: 5%;
-    display: flex;
-    
-
-}
+// PARRAFOS
 .parrafos__tos{
     display: flex;
     font-family: $font-parrafos;
-    color: black;
-    transform: translateY(-90px);
-    margin-left: 10%;
+    color: $color-titulos;
+    margin-left: auto;
+    padding: 2%;
     line-height: 100%;
     font-size: 200%;
     z-index: 1;
     line-height: 2;
     font-weight: bold;
-    text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;
+    text-shadow: 1px 0 0 $violeta-oscuro, -1px 0 0 $violeta-oscuro, 0 1px 0 $violeta-oscuro, 0 -1px 0 $violeta-oscuro;
 
 }
-
-
-#parrafotoscala{
+#parrafo__calavera{
     display: flex;
     font-family: $font-parrafos;
-    color: black;
-    transform: translateY(-50px);
+    color: $color-titulos;
     line-height: 100%;
-    margin-left: 10%;
+    margin-left: auto;
+    padding: 2%;
     font-size: 200%;
     z-index: 1;
     line-height: 2;
     font-weight: bold;
-    text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white;
+    text-shadow: 1px 0 0 $violeta-oscuro, -1px 0 0 $violeta-oscuro, 0 1px 0 $violeta-oscuro, 0 -1px 0 $violeta-oscuro;
     text-decoration: line-through;
 }

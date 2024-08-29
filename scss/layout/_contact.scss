@@ -4,26 +4,36 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  
 }
 //MAIN
 
-.titulo__contacto{
-    @include flex(inline-flex,center,center);
-    color: $color-titulos;
-    font-family: $font-titulos;
-    font-size: 500% ;
-    margin-left: 10vw;
+.section__titulo--contact{
+   @include contacytops__container-titulos;
+    .titulo__contacto{
+      @include titulos__contactytos
+     }
 }
 
-//NAVBARS LINKS
+//NAVBARS LINKS ESTILO NEON
 
-.nav__links--contacto{
+.nav__links--box{
     @include flex(flex,center,center);
-    padding-top: 5%;
-
+    margin-right: 5%;
+    padding: 1%;
     .links__nav{
         @include ancho-alto(250%,300%);
-        padding: 70%;
+        padding: 60%;
+        margin: 15%;
+        border-radius: 20px;
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px $violeta-oscuro,
+        0 0 30px $violeta-oscuro,
+        0 0 40px $violeta-oscuro,
+        0 0 50px $violeta-oscuro,
+        0 0 60px $violeta-oscuro;
         &:hover{
             scale: 1.5;
         }
